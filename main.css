@@ -3,77 +3,51 @@
     background-image: url('../Pre-proyecto-final/media/tienda.jpg');
     background-size: center;
 }
-
-.encabezado {
-    position: relative;
-    top: 150px;
-    left: 650px;
-    width: 400px;
+.header-index{
+    display: grid;
+    grid-template-areas: 
+      "logo"
+      "encabezado"
+      "nav"
+    ;
 }
 
-h1 {
-   color: coral;
+.encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    color: coral;
    font-family: 'Times New Roman', Times, serif;
    font-weight: 1200;
    font-style: unset;
    text-shadow: 5px 5px 4px burlywood;
+   padding-bottom: 20px;
 }
 
 .logo {
+    grid-area: logo;
     width: 1400px;
-    height: 250px;
+    height: 230px;
     border: 1800px 200px;
-    position: relative;
-    bottom: 120px;
-    left: 80px;
-}
-
-.menu {
-    background-color: black;
-    border-radius: 30px;
-    position: relative;
-    bottom: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+}
+.tam-img {
+   width: 40px;
+   height: 40px;
+}
+.nav-index{
+  grid-area: nav;
+  border-radius: 15px;
 }
 
-.menu div {
-    height: 30px;
-    width: 170px;
-    padding: 8px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    border: solid 2px black;
-    background-color: rgb(123, 123, 148); 
-}
 .enlace {
     text-decoration: none;
 }
-.buscador {
-   flex-basis: 490px;
-}
-.escritura {
-    width: 450px;
-    height: 25px;
-    background-color: rgb(142, 163, 192);
-    font-size: 15px;
-    position: relative;
-    bottom: 4px;
-    border: none;
-    outline: 0px;
-    border-radius: 15px;
-}
-.buscador-ajustes {
-    border: none;
-    border-radius: 30px;
-}
-.boton-buscar {
-    width: 20px;
-    height: 20px;
-}
-main {
-    width: 100%;
+                   
+                              /*======SECTOR MAIN======*/
+
+ main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,71 +55,71 @@ main {
 }
 
 main div {
-    position: relative;
     height: 450px;
-    width: 400px;
-    margin: 20px;
     border-radius: 15px;
-    box-shadow: 25px 25px 15px rgba(227, 167, 167, 0.5);
+    
     cursor: pointer;
 }
 .formato-imagen {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
+    border-radius: 15px;
 }
 
-main .formal .texto-formal {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
+main .col .texto-index {
+    display: flex;
+    justify-content: center;
     background: rgba(126, 214, 151, 0.5);
+    box-shadow: 6px 5px 5px rgba(227, 167, 167, 0.4);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
-    text-align: center;
+    position: relative;
+    bottom: 49.5vh;
 }
-main .formal:hover > .texto-formal {
+main .col:hover > .texto-index {
     opacity: 1;
     visibility: visible;
 }
-main .formal .texto-formal h2 {
+main .col .texto-index h2 {
     color: azure;
     font-size: 40px;
-    position: relative;
-    top: 150px;
+    display: flex;
+    align-items: center;
 }
 
-main .informal .texto-informal {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(126, 214, 151, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+
+footer {
+    display: flex;
+    justify-content: center;
 }
-main .informal:hover > .texto-informal {
-    opacity: 1;
-    visibility: visible;
-}
-main .informal .texto-informal h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
+.pie-de-pagina {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    list-style: none;
 }
 
-.tabla-index {
-    position: relative;
-    left: 1370px;
-    color: red;
+.contactos {
+ width: 50px;
+ height: 50px;
+ padding: 0px 7px;
+ background-color: aliceblue;
+ border-radius: 5px;
+ transition: all .4s ease-in-out;
 }
+.pie-de-pagina li h3 {
+   font-size: 30px;
+   color: white;
+   position: relative;
+   top: 15px;
+} 
+.contactos:hover {
+    transform: scale(1.3);
+     }
 
                /* -----SECCION CALZADOS-----*/
 
@@ -153,228 +127,145 @@ main .informal .texto-informal h2 {
     background-image: url('../Pre-proyecto-final/media/portada-calzados.jpg');
     background-size: cover;
 }
+.header-calzados{
+    display: grid;
+    grid-template-areas: 
+     "logo"
+     "encabezado"
+     "nav"
+    ; 
+   
+}
 main .seccion-calzados {
-    font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     color: maroon;
-    font-weight: normal;
-    position: absolute;
-    bottom: 350px;
-    left: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.seccion-calzados h2{
+    font-size: 40px;
+    font-weight: 400;
 }
 
-main .zapatillas .texto-formal {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(147, 117, 164, 0.5);
+main .col .texto-calzados {
+    display: flex;
+    justify-content: center;
+    background: rgba(239, 97, 97, 0.5);
+    box-shadow: 6px 5px 5px rgba(98, 112, 241, 0.4);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    position: relative;
+    bottom: 49.5vh;
 }
-main .zapatillas:hover > .texto-formal {
+main .col:hover > .texto-calzados {
     opacity: 1;
     visibility: visible;
 }
-main .zapatillas .texto-formal h2 {
+main .col .texto-calzados h2 {
     color: azure;
     font-size: 40px;
-    position: relative;
-    top: 150px;
+    display: flex;
+    align-items: center;
 }
 
-main .zapatos .texto-informal {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(147, 117, 164, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .zapatos:hover > .texto-informal {
-    opacity: 1;
-    visibility: visible;
-}
-main .zapatos .texto-informal h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
-}
+
               /*-----SECCION ABRIGOS-----*/
 
 .body-Abrigos {
     background-image: url('../Pre-proyecto-final/media/portada-abrigos.jpg');
     background-size: cover;
 }
-main .seccion-abrigos {
-    font-size: 40px;
+.header-abrigos{
+    display: grid;
+    grid-template-areas: 
+      "logo"
+      "encabezado"
+      "nav"
+    ;
+}
+.seccion-abrigos {
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(13, 49, 81);
-    font-weight: normal;
-    position: absolute;
-    bottom: 350px;
-    left: 700px;
+    color: rgb(203, 214, 224);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-main .gabardinas .texto-formal {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(165, 168, 110, 0.5);
+.seccion-abrigos h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+main .col .texto-abrigos {
+    display: flex;
+    justify-content: center;
+    background: rgba(91, 229, 225, 0.5);
+    box-shadow: 6px 5px 5px rgba(238, 231, 99, 0.4);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    position: relative;
+    bottom: 49.5vh;
 }
-main .gabardinas:hover > .texto-formal {
+main .col:hover > .texto-abrigos {
     opacity: 1;
     visibility: visible;
 }
-main .gabardinas .texto-formal h2 {
+main .col .texto-abrigos h2 {
     color: azure;
     font-size: 40px;
-    position: relative;
-    top: 150px;
+    display: flex;
+    align-items: center;
 }
 
-main .swetters .texto-swetters {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(165, 168, 110, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .swetters:hover > .texto-swetters {
-    opacity: 1;
-    visibility: visible;
-}
-main .swetters .texto-swetters h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
-}
-
-main .buzos .texto-buzos {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(165, 168, 110, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .buzos:hover > .texto-buzos {
-    opacity: 1;
-    visibility: visible;
-}
-main .buzos .texto-buzos h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
-}
               /*-----SECCION PANTALONES-----*/
 
 .body-jeans {
    background-image: url('../Pre-proyecto-final/media/portada-pantalones.jpg');
    background-size: cover;
  }  
- 
+ .header-pantalones{
+    display: grid;
+    grid-template-areas: 
+      "logo"
+      "encabezado"
+      "nav"
+    ;
+}
  main .seccion-jeans {
-    font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(142, 52, 52);
-    font-weight: normal;
-    position: absolute;
-    bottom: 350px;
-    left: 700px;
+    color: rgb(207, 213, 161);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
- main .chino .texto-chinos {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(43, 194, 213, 0.5);
+.seccion-jeans h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+main .col .texto-pantalones {
+    display: flex;
+    justify-content: center;
+    background: rgba(211, 232, 55, 0.5);
+    box-shadow: 6px 5px 5px rgba(191, 64, 128, 0.4);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    position: relative;
+    bottom: 49.5vh;
 }
-main .chino:hover > .texto-chinos {
+main .col:hover > .texto-pantalones {
     opacity: 1;
     visibility: visible;
 }
-main .chino .texto-chinos h2 {
+main .col .texto-pantalones h2 {
     color: azure;
     font-size: 40px;
-    position: relative;
-    top: 150px;
-}
-
-main .jeans .texto-jeans {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(43, 194, 213, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .jeans:hover > .texto-jeans {
-    opacity: 1;
-    visibility: visible;
-}
-main .jeans .texto-jeans h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
-}
-
-main .bermudas .texto-bermudas {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(43, 194, 213, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .bermudas:hover > .texto-bermudas {
-    opacity: 1;
-    visibility: visible;
-}
-main .bermudas .texto-bermudas h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
+    display: flex;
+    align-items: center;
 }
               /*-----SECCION REMERAS-----*/
              
@@ -383,56 +274,43 @@ main .bermudas .texto-bermudas h2 {
     background-size: cover;
 }  
 main .seccion-remeras {
-    font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(100, 152, 171);
-    font-weight: normal;
-    position: absolute;
-    bottom: 350px;
-    left: 550px;
+    color: rgb(233, 52, 52);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-main .remeras .texto-remeras {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(219, 59, 59, 0.5);
+.seccion-remeras h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+.header-remeras{
+    display: grid;
+    grid-template-areas: 
+      "logo"
+      "encabezado"
+      "nav"
+    ;
+}
+main .col .texto-remeras {
+    display: flex;
+    justify-content: center;
+    background: rgba(211, 232, 55, 0.5);
+    box-shadow: 6px 5px 5px rgba(191, 64, 128, 0.4);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    position: relative;
+    bottom: 49.5vh;
 }
-main .remeras:hover > .texto-remeras {
+main .col:hover > .texto-remeras {
     opacity: 1;
     visibility: visible;
 }
-main .remeras .texto-remeras h2 {
+main .col .texto-remeras h2 {
     color: azure;
     font-size: 40px;
-    position: relative;
-    top: 150px;
-} 
-main .Camisas .texto-Camisas {
-    position: relative;
-    bottom: 489px;
-    right: 19px;
-    width: 100%;
-    height: 100%;
-    background: rgba(219, 59, 59, 0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-main .Camisas:hover > .texto-Camisas {
-    opacity: 1;
-    visibility: visible;
-}
-main .Camisas .texto-Camisas h2 {
-    color: azure;
-    font-size: 40px;
-    position: relative;
-    top: 150px;
+    display: flex;
+    align-items: center;
 }
