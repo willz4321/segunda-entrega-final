@@ -314,3 +314,67 @@ main .col .texto-remeras h2 {
     display: flex;
     align-items: center;
 }
+   /*------SECCION CORREO------*/
+     
+   .body-correo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+}
+.titulo-consulta {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    font-size: 40px;
+    color: #9cf1ff;
+}    
+           
+.body-correo .container {
+    width: 550px;
+    height: 460px;
+    margin-top: 250px;
+    background-color: #431f89;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 30px;
+    box-shadow: 7px 13px 37px #000;
+}
+.nombre {
+    font-size: 20px;
+    border-color: #9df2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #431f89;
+    border-radius: 10px;
+}
+.apellido {
+    font-size: 20px;
+    border-color: #9df2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #431f89;
+    border-radius: 10px;
+}
+.correo {
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #9df2f2;
+    background-color: #431f89;
+    box-sizing: border-box;
+}
+.mensaje {
+    width: 100%;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border-color: #9df2f2;
+    background-color: #431f89;
+    height: 250px;
+} 
+.botones-correo{ 
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
