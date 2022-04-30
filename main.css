@@ -4,7 +4,7 @@
      @media screen and (min-width: 320px) {
     .body-index {
         width: 100vw;
-        background-image: url('../Pre-proyecto-final/media/tienda.jpg');
+        background-image: url('../segunda-entrega-final/media/tienda.jpg');
         background-size: center;
     }
     .header-paginas{
@@ -109,7 +109,7 @@ footer {
                /* -----SECCION CALZADOS-----*/
 
 .body-calzados {
-    background-image: url('../Pre-proyecto-final/media/portada-calzados.jpg');
+    background-image: url('../segunda-entrega-final/media/portada-calzados.jpg');
     background-size: cover;
 }
 main .seccion-calzados {
@@ -132,7 +132,7 @@ main .col .texto-calzados {
                 /*-----SECCION ABRIGOS-----*/
 
 .body-Abrigos {
-    background-image: url('../Pre-proyecto-final/media/portada-abrigos.jpg');
+    background-image: url('../segunda-entrega-final/media/portada-abrigos.jpg');
     background-size: cover;
 }
 .seccion-abrigos {
@@ -155,7 +155,7 @@ main .col .texto-abrigos {
                /*-----SECCION PANTALONES-----*/
 
 .body-jeans {
-    background-image: url('../Pre-proyecto-final/media/portada-pantalones.jpg');
+    background-image: url('../segunda-entrega-final/media/portada-pantalones.jpg');
     background-size: cover;
   }  
   main .seccion-jeans {
@@ -177,7 +177,7 @@ main .col .texto-abrigos {
               /*-----SECCION REMERAS-----*/
              
 .body-remeras {
-    background-image: url('../Pre-proyecto-final/media/led.jpg');
+    background-image: url('../segunda-entrega-final/media/led.jpg');
     background-size: cover;
 }  
 main .seccion-remeras {
@@ -271,7 +271,7 @@ main .col .texto-remeras {
     
             .body-index {
                 width: 100vw;
-                background-image: url('../Pre-proyecto-final/media/tienda.jpg');
+                background-image: url('../segunda-entrega-final/media/tienda.jpg');
                 background-size: center;
             }
             .header-paginas{
@@ -375,7 +375,7 @@ main .col .texto-remeras {
                        /* -----SECCION CALZADOS-----*/
         
         .body-calzados {
-            background-image: url('../Pre-proyecto-final/media/portada-calzados.jpg');
+            background-image: url('../segunda-entrega-final/media/portada-calzados.jpg');
             background-size: cover;
         }
         main .seccion-calzados {
@@ -398,7 +398,7 @@ main .col .texto-remeras {
                         /*-----SECCION ABRIGOS-----*/
         
         .body-Abrigos {
-            background-image: url('../Pre-proyecto-final/media/portada-abrigos.jpg');
+            background-image: url('../segunda-entrega-final/media/portada-abrigos.jpg');
             background-size: cover;
         }
         .seccion-abrigos {
@@ -421,7 +421,7 @@ main .col .texto-remeras {
                        /*-----SECCION PANTALONES-----*/
         
         .body-jeans {
-            background-image: url('../Pre-proyecto-final/media/portada-pantalones.jpg');
+            background-image: url('../segunda-entrega-final/media/portada-pantalones.jpg');
             background-size: cover;
           }  
           main .seccion-jeans {
@@ -443,7 +443,7 @@ main .col .texto-remeras {
                       /*-----SECCION REMERAS-----*/
                      
         .body-remeras {
-            background-image: url('../Pre-proyecto-final/media/led.jpg');
+            background-image: url('../segunda-entrega-final/media/led.jpg');
             background-size: cover;
         }  
         main .seccion-remeras {
@@ -538,7 +538,7 @@ main .col .texto-remeras {
 
 .body-index {
     width: 100vw;
-    background-image: url('../Pre-proyecto-final/media/tienda.jpg');
+    background-image: url('../segunda-entrega-final/media/tienda.jpg');
     background-size: center;
 }
 .header-paginas{
@@ -668,7 +668,7 @@ footer {
                /* -----SECCION CALZADOS-----*/
 
 .body-calzados {
-    background-image: url('../Pre-proyecto-final/media/portada-calzados.jpg');
+    background-image: url('../segunda-entrega-final/media/portada-calzados.jpg');
     background-size: cover;
 }
 main .seccion-calzados {
@@ -710,7 +710,7 @@ main .col .texto-calzados h2 {
               /*-----SECCION ABRIGOS-----*/
 
 .body-Abrigos {
-    background-image: url('../Pre-proyecto-final/media/portada-abrigos.jpg');
+    background-image: url('../segunda-entrega-final/media/portada-abrigos.jpg');
     background-size: cover;
 }
 .seccion-abrigos {
@@ -750,7 +750,7 @@ main .col .texto-abrigos h2 {
               /*-----SECCION PANTALONES-----*/
 
 .body-jeans {
-   background-image: url('../Pre-proyecto-final/media/portada-pantalones.jpg');
+   background-image: url('../segunda-entrega-final/media/portada-pantalones.jpg');
    background-size: cover;
  }  
  main .seccion-jeans {
@@ -789,7 +789,7 @@ main .col .texto-pantalones h2 {
               /*-----SECCION REMERAS-----*/
              
 .body-remeras {
-    background-image: url('../Pre-proyecto-final/media/led.jpg');
+    background-image: url('../segunda-entrega-final/media/led.jpg');
     background-size: cover;
 }  
 main .seccion-remeras {
